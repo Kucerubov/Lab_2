@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity() {
                 addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
                 setDataAndType(it, contentResolver.getType(it))
                 putExtra(Intent.EXTRA_STREAM, it)
-                putExtra(Intent.EXTRA_EMAIL, arrayOf("kucerubov365@gmail.com"))
+                putExtra(Intent.EXTRA_EMAIL, arrayOf("hodovychenko.labs@gmail.com"))
                 putExtra(Intent.EXTRA_SUBJECT, "КПП АИ-194 Куцерубов И.И.")
             }
             startActivity(Intent.createChooser(emailIntent, "Отправка..."))
